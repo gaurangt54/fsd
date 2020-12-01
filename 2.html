@@ -13,9 +13,31 @@
     <title>bootstrap Experiment</title>
     <link rel="stylesheet" href="light.css">
     <link rel="stylesheet" href="popup.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="main.js"></script>
     
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                $(".profilepic").css({ border: "3px solid white" });
+
+                $("#about-me").click(function () {
+                    $(".about").toggle(1000);
+                });
+
+                $(".school").hover(function () {
+                    $(".schoolm").show(500);
+                });
+
+                $(".diploma").hover(function () {
+                    $(".diplomam").show(500);
+                });
+
+                $(".degree").hover(function () {
+                    $(".degreem").show(500);
+                });
+        });
+        
+    </script>
 
 
 </head>
@@ -32,7 +54,9 @@
 
     <div class="box row m-5 px-5 py-2" id="know-me">
         <div class="col-lg-4 p-2 text-center" style="float: left;">
-            <img src="img.jpg" class="profilepic" alt="Gaurang Thakkar" width="170px" height="240px" vspace="50px">
+            <img src="img.jpg" class="profilepic" alt="Gaurang Thakkar" width="170px" height="240px" vspace="30px">
+            <br>
+            <button id="about-me" class="btn btn-light">About Me</button>
         </div>
 
         <div class="col-lg-8 pl-5 pt-5 " style="float: left;">
@@ -42,7 +66,13 @@
             <p class="pt-1" style='font-size:22px'><i  class='fas fa-envelope mr-2'></i> gaurang.thakker@somaiya.edu</p>
             <p class="pt-1" style='font-size:22px'><i  class='fas fa-phone-alt mr-2'></i> 9930607033</p>
             <p class="pt-1" style='font-size:22px'>DOB: 06/02/2000</p>
-        </div>  
+        </div> 
+        
+        <div class="about" style="display: none;">
+            Enthusiastic programmer and web designer eager to contribute to team success
+            through hard work, attention to detail and excellent organizational skills. Love to work and
+            gain experience in web development. Always energetic and eager to learn new skills.
+        </div>
     </div>
 
     <div class="box row m-5 px-5 py-4" id="education">
@@ -52,18 +82,21 @@
                 <h4>Saraswati Education Society High School, Thane</h4>
                 <p class="pt-2" style='font-size:20px'><i  class='fas fa-calendar-alt mr-1'></i> 2006 - 2016</p>
                 <p class="" style='font-size:20px;'><i  class='fas fa-user-graduate mr-1'></i> SSC - Maharashtra State Board</p> 
+                <h5 class="schoolm" style="display: none;">80.4%</h5>
             </div>
 
             <div class="diploma p-3">
                 <h4>K.J. Somaiya Polytechnic Vidyvihar, Thane</h4>
                 <p class="pt-2" style='font-size:20px'><i  class='fas fa-calendar-alt mr-1'></i> 2016 - 2019</p>
                 <p class="" style='font-size:20px;'><i  class='fas fa-user-graduate mr-1'></i> Diploma - Somaiya Autonomous University</p> 
+                <h5 class="diplomam" style="display: none;">91.4%</h5>
             </div>
             
             <div class="degree p-3">
                 <h4>K.J. Somaiya College of Engineeering, Thane</h4>
                 <p class="pt-2" style='font-size:20px'><i  class='fas fa-calendar-alt mr-1'></i> 2019 - (Third year) ongoing </p> 
                 <p class="" style='font-size:20px;'><i  class='fas fa-user-graduate mr-1'></i> B.Tech - Somaiya Autonomous University</p> 
+                <h5 class="degreem" style="display: none;">CGPA 9.33</h5>
             </div>
         </div>
     </div>
