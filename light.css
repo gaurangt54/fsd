@@ -1,0 +1,33 @@
+body{
+    font-family: "Roboto";
+    color: #132c3b;
+}
+
+i{
+    color: #2c6b8f; 
+}
+
+.progress-bar{
+    background-color: #2c6b8f;
+}
+
+.box{
+    background-color:#c3cdd4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input{
+    background-color:#8aa9bf;
+    border: 0;
+    border-radius: 5px;
+}
+
+a.btn{
+    font-weight: 600;
+    font-size: 20px;
+    color: #132c3b;
+}
+
+.btn:hover{
+    color: #2c6b8f;  
+}
